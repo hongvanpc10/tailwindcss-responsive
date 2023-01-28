@@ -1,6 +1,6 @@
 {
 	"name": "@hongvanpc10/tailwindcss-responsive",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"main": "index.js",
 	"license": "MIT",
 	"description": "A plugin that provides utilities for responsive: show and hide element.",

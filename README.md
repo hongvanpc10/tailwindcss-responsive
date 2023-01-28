@@ -31,7 +31,7 @@ module.exports = {
 
 ## Usage
 
-Use the `show-on-{breakpoint}` and `show-on-{breakpoint}` utilities to specify when element should be shown or hidden:
+Use the `show-on-{breakpoint}` and `hide-on-{breakpoint}` utilities to specify when element should be shown or hidden:
 
 ```html
 <p class="show-on-xl">
