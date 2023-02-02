@@ -10,6 +10,8 @@ Install the plugin from npm:
 npm install -D @hongvanpc10/tailwindcss-responsive
 ```
 
+Or yarn:
+
 ```sh
 yarn add @hongvanpc10/tailwindcss-responsive --dev
 ```
@@ -45,13 +47,9 @@ Use the `show-on-{breakpoint}` and `hide-on-{breakpoint}` utilities to specify w
 Result:
 
 ```css
-.show-on-xl {
-  display: none;
-}
-
 @media (min-width: 1280px) {
-  .show-on-xl {
-    display: initial;
+  .hide-on-xl {
+    display: none;
   }
 }
 ```

@@ -5,9 +5,8 @@ module.exports = plugin(
 		matchComponents(
 			{
 				'show-on': value => ({
-					display: 'none',
-					[`@media (min-width: ${value})`]: {
-						display: 'initial',
+					[`@media (max-width: ${value})`]: {
+						display: 'none',
 					},
 				}),
 			},
@@ -17,7 +16,6 @@ module.exports = plugin(
 		matchComponents(
 			{
 				'hide-on': value => ({
-					display: 'initial',
 					[`@media (min-width: ${value})`]: {
 						display: 'none',
 					},
