@@ -33,10 +33,35 @@ module.exports = {
 
 ## Usage
 
-Use the `show-on-{breakpoint}` and `hide-on-{breakpoint}` utilities to specify when element should be shown or hidden:
+Use the `show-on-{breakpoint}` and `hide-on-{breakpoint}` utilities to specify when element should be shown or hidden
+
+## Examples
+
+To show element on xl devices and higher:
 
 ```html
 <p class="show-on-xl">
+  Et molestiae hic earum repellat aliquid est doloribus delectus. Enim illum
+  odio porro ut omnis dolor debitis natus. Voluptas possimus deserunt sit
+  delectus est saepe nihil. Qui voluptate possimus et quia. Eligendi voluptas
+  voluptas dolor cum. Rerum est quos quos id ut molestiae fugit.
+</p>
+```
+
+Result:
+
+```css
+@media (max-width: 1280px) {
+  .show-on-xl {
+    display: none;
+  }
+}
+```
+
+To hide element on xl devices and higher:
+
+```html
+<p class="hide-on-xl">
   Et molestiae hic earum repellat aliquid est doloribus delectus. Enim illum
   odio porro ut omnis dolor debitis natus. Voluptas possimus deserunt sit
   delectus est saepe nihil. Qui voluptate possimus et quia. Eligendi voluptas
@@ -52,6 +77,17 @@ Result:
     display: none;
   }
 }
+```
+
+To show element from md devices to lg devices:
+
+```html
+<p class="show-on-md hide-on-lg">
+  Et molestiae hic earum repellat aliquid est doloribus delectus. Enim illum
+  odio porro ut omnis dolor debitis natus. Voluptas possimus deserunt sit
+  delectus est saepe nihil. Qui voluptate possimus et quia. Eligendi voluptas
+  voluptas dolor cum. Rerum est quos quos id ut molestiae fugit.
+</p>
 ```
 
 ## Configuration
